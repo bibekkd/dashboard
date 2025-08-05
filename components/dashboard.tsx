@@ -21,8 +21,7 @@ import DottedAreaChart from "./charts/area"
 import { SidebarContent } from "./SideBarContent"
 
 const newDeals = [ 
-  "Fruit2Go", "Marshall’s MKT", "CCNT", "Joana Mini-market", 
-  "Little Brazil Vegan", "Target", "Organic Place", "Morello’s"
+  "Fruit2Go", "CCNT", "Joana Mini-market", "Target",  "Morello’s", "Little Brazil Vegan", "Marshall’s MKT", "Organic Place",
 ]
 
 export default function Component() {
@@ -32,7 +31,7 @@ export default function Component() {
   return (
     <div className="flex h-screen bg-[#F6F6F3]">
       {/* Desktop Sidebar */}
-      <div className="hidden lg:flex w-64 bg-[#F6F6F3] py-4 pl-4 flex-col">
+      <div className="hidden lg:flex w-80 bg-[#F6F6F3] py-4 pl-4 flex-col">
         <SidebarContent />
       </div>
 
@@ -65,16 +64,16 @@ export default function Component() {
 
         <div className="p-4 sm:p-6 lg:p-8">
           {/* Top Stats */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8">
+          <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 mb-6 sm:mb-8">
             {/* Revenues */}
-            <Card>
+            <Card className="flex-1">
               <CardHeader className="pb-2">
                 <CardTitle className="text-lg font-semibold text-black">Revenues</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="flex items-center gap-2 mb-1">
+                <div className="flex items-center gap-1 mb-1">
                   <span className="px-6 text-4xl sm:text-5xl font-semibold">15%</span>
-                  <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5 text-green-500" />
+                  <ArrowUpRight className="w-4 h-4 sm:w-10 sm:h-10 text-green-500" />
                 </div>
                 <p className="px-6 text-xs sm:text-sm text-[#454545] mb-3 sm:mb-4">Increase compared to last week</p>
                 <div className="flex justify-start mt-3 px-4 sm:mt-4">
@@ -86,7 +85,7 @@ export default function Component() {
             </Card>
 
             {/* Lost Deals */}
-            <Card>
+            <Card className="flex-1">
               <CardHeader className="pb-2">
                 <CardTitle className="text-lg font-semibold text-black">Lost deals</CardTitle>
               </CardHeader>
@@ -102,7 +101,7 @@ export default function Component() {
             </Card>
 
             {/* Quarter Goal */}
-            <Card className="sm:col-span-2 lg:col-span-1">
+            <Card className="w-full sm:w-60 md:w-56 lg:w-60 xl:w-68">
               <CardHeader className="pb-2">
                 <CardTitle className="text-lg font-semibold text-black text-center">Quarter goal</CardTitle>
               </CardHeader>
@@ -237,7 +236,7 @@ export default function Component() {
                   </div>
                 </div>
                 <div className="flex justify-start px-6">
-                  <Button variant="link" className="pt-45 h-auto text-[#734A00] mt-3 sm:mt-4 text-xs sm:text-sm">
+                  <Button variant="link" className="pt-45 h-auto text-[#734A00] mt-3 sm:mt-4 text-xs sm:text-sm font-medium">
                     All customers <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 ml-1" />
                   </Button>
                 </div>
@@ -270,8 +269,8 @@ export default function Component() {
                     <CardContent className="px-4">
                       <div className="text-center sm:text-left">
                         <div className="text-md font-semibold sm:text-base text-[#7D7D7D] mb-2 pb-10">Top month</div>
-                        <div className="font-bold text-xl sm:text-2xl text-black mb-1">November</div>
-                        <div className="text-md sm:text-base text-orange-500">2019</div>
+                        <div className="font-bold text-xl sm:text-2xl text-[#734A00] mb-1">November</div>
+                        <div className="text-md sm:text-base text-[#FFA500]">2019</div>
                       </div>
                     </CardContent>
                 </Card>
@@ -279,7 +278,7 @@ export default function Component() {
                     <CardContent className="px-4">
                       <div className="text-center sm:text-left">
                         <div className="text-md font-semibold sm:text-base text-[#7D7D7D] mb-2 pb-10">Top year</div>
-                        <div className="font-bold text-xl sm:text-2xl text-black mb-1">2023</div>
+                        <div className="font-bold text-xl sm:text-2xl text-[#734A00] mb-1">2023</div>
                         <div className="text-md sm:text-base text-gray-500">96K sold so far</div>
                       </div>
                     </CardContent>
@@ -374,11 +373,11 @@ export default function Component() {
                 <CardTitle className="text-lg sm:text-xl">New deals</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="flex flex-wrap items-center justify-center gap-2">
+                <div className="flex flex-wrap items-center justify-start px-5 gap-2">
                   {newDeals.map((text, index) => (
                     <span key={index} className="flex flex-row items-center justify-center p-2 rounded-xl bg-[#FFF7E8]">
-                    <Image alt="Plus Icon" src={"/plusSquaredRounded.png"} height={20} width={20}/>
-                    <p className="text-black p-2 rounded-md text-md">
+                    <Image alt="Plus Icon" src={"/plusSquaredRounded.png"} height={24} width={24}/>
+                    <p className="text-[#734A00] pl-2 pr-2 py-2 rounded-md text-md">
                       {text}
                     </p>
                   </span>

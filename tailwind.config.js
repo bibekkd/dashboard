@@ -12,6 +12,8 @@ module.exports = {
         colors: {
           'lightOrange' : '#FFF7E8',
           'lightGray' : '#7D7D7D',
+          'darkOrange' : '#734A00',
+          'orange' : '#FFA500',
         },
         fontFamily: {
           archivo: ['var(--font-archivo)', 'system-ui', 'sans-serif'],
