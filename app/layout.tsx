@@ -2,21 +2,17 @@ import type { Metadata } from "next";
 import { Archivo, Inter } from "next/font/google";
 import "./globals.css";
 
-
-
 const archivo = Archivo({
-    subsets: ['latin'],
-    weight: ['400', '500', '700'], // Choose weights you need
-    variable: '--font-archivo',   // Optional: add a CSS variable
-    display: 'swap',
+  subsets: ['latin'],
+  variable: '--font-archivo',
+  display: 'swap',
 });
 
 const inter = Inter({
-    subsets: ['latin'],
-    variable: '--font-inter',
-    display: 'swap',
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
 });
-
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -31,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} ${archivo.variable} antialiased`}
+        className={`${inter.className} ${archivo.variable} ${inter.variable} antialiased`}
       >
         {children}
       </body>

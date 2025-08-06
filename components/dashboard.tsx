@@ -62,13 +62,13 @@ export default function Component() {
           <div className="w-10" /> {/* Spacer for centering */}
         </div>
 
-        <div className="p-4 sm:p-6 lg:p-8">
+        <div className="px-4 pb-4 pt-4 sm:px-6 sm:pb-6 sm:pt-4 lg:px-8 lg:pb-8 lg:pt-4">
           {/* Top Stats */}
           <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 mb-6 sm:mb-8">
             {/* Revenues */}
             <Card className="flex-1">
               <CardHeader className="pb-2">
-                <CardTitle className="text-lg font-semibold text-black">Revenues</CardTitle>
+                <CardTitle className="text-xl font-semibold text-black">Revenues</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="flex items-center gap-1 mb-1">
@@ -87,7 +87,7 @@ export default function Component() {
             {/* Lost Deals */}
             <Card className="flex-1">
               <CardHeader className="pb-2">
-                <CardTitle className="text-lg font-semibold text-black">Lost deals</CardTitle>
+                <CardTitle className="text-xl font-semibold text-black">Lost deals</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="px-6 text-4xl sm:text-5xl font-semibold mb-1">4%</div>
@@ -103,7 +103,7 @@ export default function Component() {
             {/* Quarter Goal */}
             <Card className="w-full sm:w-60 md:w-56 lg:w-60 xl:w-68">
               <CardHeader className="pb-2">
-                <CardTitle className="text-lg font-semibold text-black text-center">Quarter goal</CardTitle>
+                <CardTitle className="text-xl font-semibold text-black text-center">Quarter goal</CardTitle>
               </CardHeader>
               <CardContent>
                 <SemiCircleGauge/>

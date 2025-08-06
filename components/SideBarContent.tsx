@@ -35,7 +35,7 @@ export const SidebarContent = () => {
         <div className="space-y-3 px-2">
           <Button 
             variant="ghost" 
-            className="w-full justify-start gap-3 rounded-xl hover:bg-[#FFF7E8] px-4 py-3 hover:text-[#734A00] text-black"
+            className="w-full justify-start gap-3 rounded-xl hover:bg-[#FFF7E8] px-4 py-3 hover:text-[#734A00] text-black font-normal"
             onMouseEnter={() => setHoveredItem('dashboard')}
             onMouseLeave={() => setHoveredItem(null)}
           >
@@ -44,7 +44,7 @@ export const SidebarContent = () => {
           </Button>
           <Button 
             variant="ghost" 
-            className="w-full justify-center gap-3 rounded-xl hover:bg-[#FFF7E8] px-4 mx-1 py-3 hover:text-[#734A00] text-black"
+            className="w-full justify-center gap-3 rounded-xl hover:bg-[#FFF7E8] px-4 mx-1 py-3 hover:text-[#734A00] text-black font-normal"
             onMouseEnter={() => setHoveredItem('customers')}
             onMouseLeave={() => setHoveredItem(null)}
           >
@@ -54,7 +54,7 @@ export const SidebarContent = () => {
           </Button>
           <Button 
             variant="ghost" 
-            className="w-full justify-start gap-3 rounded-xl hover:bg-[#FFF7E8] px-4 py-3 hover:text-[#734A00] text-black"
+            className="w-full justify-start gap-3 rounded-xl hover:bg-[#FFF7E8] px-4 py-3 hover:text-[#734A00] text-black font-normal"
             onMouseEnter={() => setHoveredItem('reports')}
             onMouseLeave={() => setHoveredItem(null)}
           >
@@ -63,7 +63,7 @@ export const SidebarContent = () => {
           </Button>
           <Button 
             variant="ghost" 
-            className="w-full justify-start gap-3 rounded-xl hover:bg-[#FFF7E8] px-4 py-3 hover:text-[#734A00] text-black"
+            className="w-full justify-start gap-3 rounded-xl hover:bg-[#FFF7E8] px-4 py-3 hover:text-[#734A00] text-black font-normal"
             onMouseEnter={() => setHoveredItem('geography')}
             onMouseLeave={() => setHoveredItem(null)}
           >
@@ -72,7 +72,7 @@ export const SidebarContent = () => {
           </Button>
           <Button 
             variant="ghost" 
-            className="w-full justify-start gap-3 rounded-xl hover:bg-[#FFF7E8] px-4 py-3 hover:text-[#734A00] text-black"
+            className="w-full justify-start gap-3 rounded-xl hover:bg-[#FFF7E8] px-4 py-3 hover:text-[#734A00] text-black font-normal"
             onMouseEnter={() => setHoveredItem('conversations')}
             onMouseLeave={() => setHoveredItem(null)}
           >
@@ -81,7 +81,7 @@ export const SidebarContent = () => {
           </Button>
           <Button 
             variant="ghost" 
-            className="w-full justify-start gap-3 rounded-xl hover:bg-[#FFF7E8] px-4 py-3 hover:text-[#734A00] text-black"
+            className="w-full justify-start gap-3 rounded-xl hover:bg-[#FFF7E8] px-4 py-3 hover:text-[#734A00] text-black font-normal"
             onMouseEnter={() => setHoveredItem('deals')}
             onMouseLeave={() => setHoveredItem(null)}
           >
@@ -90,7 +90,7 @@ export const SidebarContent = () => {
           </Button>
           <Button 
             variant="ghost" 
-            className="w-full justify-start gap-3 rounded-xl hover:bg-[#FFF7E8] px-4 py-3 hover:text-[#734A00] text-black"
+            className="w-full justify-start gap-3 rounded-xl hover:bg-[#FFF7E8] px-4 py-3 hover:text-[#734A00] text-black font-normal"
             onMouseEnter={() => setHoveredItem('exports')}
             onMouseLeave={() => setHoveredItem(null)}
           >
@@ -115,7 +115,7 @@ export const SidebarContent = () => {
         <div className="space-y-1">
           <Button 
             variant="ghost" 
-            className="w-full justify-start gap-3 px-2 py-3 hover:bg-[#FFF7E8] rounded-xl hover:text-[#734A00] text-black"
+            className="w-full justify-start gap-3 px-2 py-3 hover:bg-[#FFF7E8] rounded-xl hover:text-[#734A00] text-black font-normal"
             onMouseEnter={() => setHoveredItem('settings')}
             onMouseLeave={() => setHoveredItem(null)}
           >
@@ -124,7 +124,7 @@ export const SidebarContent = () => {
           </Button>
           <Button 
             variant="ghost" 
-            className="w-full justify-start gap-3 px-2 py-3 hover:bg-[#FFF7E8] rounded-xl hover:text-[#734A00] text-[#B01212]"
+            className="w-full justify-start gap-3 px-2 py-3 hover:bg-[#FFF7E8] rounded-xl hover:text-[#734A00] text-[#B01212] font-normal"
             onMouseEnter={() => setHoveredItem('logout')}
             onMouseLeave={() => setHoveredItem(null)}
           >
